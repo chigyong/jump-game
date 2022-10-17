@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: gray;
+}
+
+#board {
+  height: 30vh;
+  width: 100%;
+  border: solid red 5px;
+  margin-top: 10rem;
+  background-color: black;
+}
+#board #character {
+  height: 60px;
+  width: 30px;
+  background-color: white;
+  position: relative;
+  top: 150px;
+}
+#board .animate {
+  -webkit-animation: jump 500ms;
+          animation: jump 500ms;
+}
+#board #blocks {
+  height: 40px;
+  width: 50px;
+  background-color: red;
+  position: relative;
+  top: 110px;
+  left: 90rem;
+  -webkit-animation: going-left 2.5s infinite linear;
+          animation: going-left 2.5s infinite linear;
+}
+
+@-webkit-keyframes going-left {
+  0% {
+    left: 90rem;
+  }
+  100% {
+    left: -10px;
+  }
+}
+
+@keyframes going-left {
+  0% {
+    left: 90rem;
+  }
+  100% {
+    left: -10px;
+  }
+}
+@-webkit-keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 100px;
+  }
+  70% {
+    top: 100px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 100px;
+  }
+  70% {
+    top: 100px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #board {
+    height: 34vh;
+  }
+}/*# sourceMappingURL=style.css.map */
