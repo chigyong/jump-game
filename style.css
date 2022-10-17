@@ -49,8 +49,8 @@ body {
   position: relative;
   top: 110px;
   left: 140px;
-  -webkit-animation: going-left 2.5s infinite linear;
-          animation: going-left 2.5s infinite linear;
+  -webkit-animation: going-left 1.5s infinite linear;
+          animation: going-left 1.5s infinite linear;
 }
 
 @-webkit-keyframes going-left {
