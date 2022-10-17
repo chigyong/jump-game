@@ -6,19 +6,34 @@
 }
 
 body {
-  background-color: gray;
+  background-color: black;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  list-style: circle;
+  margin-top: 2rem;
+}
+.card h1 {
+  color: red;
 }
 
 #board {
   height: 30vh;
   width: 50%;
   margin-top: 10rem;
-  background-color: black;
+  background-color: white;
+  margin-left: 25rem;
 }
 #board #character {
   height: 60px;
   width: 30px;
-  background-color: white;
+  background-color: black;
   position: relative;
   top: 150px;
   left: 10px;
@@ -87,5 +102,6 @@ body {
   #board {
     height: 35vh;
     width: 100%;
+    margin-left: auto;
   }
 }/*# sourceMappingURL=style.css.map */
