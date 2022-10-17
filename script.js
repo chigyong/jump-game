@@ -1,5 +1,5 @@
 var character = document.getElementById('character');
-var block = document.getElementById('blocks');
+var blocks = document.getElementById('blocks');
 
 function jump (){
 
@@ -14,11 +14,11 @@ function jump (){
 var checkDead = setInterval(function(){
 
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue('top'));
-    blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue('left'));
+    var blocksLeft = parseInt(window.getComputedStyle(blocks).getPropertyValue('left'));
 
-    if(blockLeft < 39 && blockLeft > 0 && characterTop>= 130){
-        block.style.animation = 'none';
-        block.style.display = 'none';
-        alert('Gotcha Sister Lily')
+    if (blocksLeft < 55 && blocksLeft > 0 && characterTop >= 130){
+        blocks.style.animation = 'none';
+        blocks.style.display = 'none';
+        alert('Gotcha Sister Lily');
     }
-},10)
+}, 10)
