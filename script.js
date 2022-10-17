@@ -19,6 +19,6 @@ var checkDead = setInterval(function(){
     if(blockLeft < 39 && blockLeft > 0 && characterTop>= 130){
         block.style.animation = 'none';
         block.style.display = 'none';
-        alert('You Lose')
+        alert('Gotcha Sister Lily')
     }
 },10)

@@ -21,30 +21,36 @@ h1 {
 }
 }
 #board {
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url(bg.jpg);
+    background-size: cover;
+    background-position: center;
     height: 30vh;
     width: 50%;
     margin-top: 10rem;
     background-color: white;
     margin-left: 25rem;
 #character {
-    height: 60px;
-    width: 30px;
-    background-color: black;
     position: relative;
     top: 150px;
     left: 10px;
+    img {
+        height: 60px;
+        width: 60px;
+    }
 }
 .animate {
     animation: jump 500ms;
 }
 #blocks {
-    height: 40px;
-    width: 50px;
-    background-color: red;
     position: relative;
-    top: 110px;
+    top: 90px;
     left: 140px;
     animation: going-left 1.5s infinite linear;
+    img {
+        height: 60px;
+        width: 60px;
+    }
 }
 }
 @keyframes going-left {

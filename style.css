@@ -24,6 +24,9 @@ body {
 }
 
 #board {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(bg.jpg);
+  background-size: cover;
+  background-position: center;
   height: 30vh;
   width: 50%;
   margin-top: 10rem;
@@ -31,26 +34,28 @@ body {
   margin-left: 25rem;
 }
 #board #character {
-  height: 60px;
-  width: 30px;
-  background-color: black;
   position: relative;
   top: 150px;
   left: 10px;
+}
+#board #character img {
+  height: 60px;
+  width: 60px;
 }
 #board .animate {
   -webkit-animation: jump 500ms;
           animation: jump 500ms;
 }
 #board #blocks {
-  height: 40px;
-  width: 50px;
-  background-color: red;
   position: relative;
-  top: 110px;
+  top: 90px;
   left: 140px;
   -webkit-animation: going-left 1.5s infinite linear;
           animation: going-left 1.5s infinite linear;
+}
+#board #blocks img {
+  height: 60px;
+  width: 60px;
 }
 
 @-webkit-keyframes going-left {
