@@ -9,7 +9,7 @@ body {
 }
 #board {
     height: 30vh;
-    width: 100%;
+    width: 50%;
     border: solid red 5px;
     margin-top: 10rem;
     background-color: black;
@@ -29,16 +29,16 @@ body {
     background-color: red;
     position: relative;
     top: 110px;
-    left: 90rem;
+    left: 140px;
     animation: going-left 2.5s infinite linear;
 }
 }
 @keyframes going-left {
     0% {
-        left: 90rem;
+        left: 800px;
     }
     100% {
-        left: -10px;
+        left: -50px;
     }
 }
 @keyframes jump {
@@ -60,6 +60,7 @@ body {
 }
 @media only screen and (max-width:768px) {
     #board {
-        height: 34vh;
+        height: 35vh;
+        width: 100%;
     }
 }
